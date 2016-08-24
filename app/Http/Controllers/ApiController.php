@@ -123,7 +123,7 @@ class ApiController extends Controller
                 $business->order_id=$data['out_trade_no'];
 
 
-                $data['body']='test|1|3';
+                $data['body']='test|1|4';
 
                 
 

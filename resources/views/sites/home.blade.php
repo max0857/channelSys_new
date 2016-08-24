@@ -37,7 +37,7 @@
 
         .main{
             position: fixed;
-            height:100%;
+            height:800px;
             overflow-x: hidden;
             overflow-y: hidden;
             /*padding-bottom: 100%;*/
