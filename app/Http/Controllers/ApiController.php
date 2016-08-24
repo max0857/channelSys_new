@@ -103,8 +103,8 @@ class ApiController extends Controller
                 ]
             ]);
 
-//        $promise=$client->requestAsync('GET','https://api.bmob.cn/1/pay/'.$request['out_trade_no']);
-        $promise=$client->requestAsync('GET','https://api.bmob.cn/1/pay/6f5ff2a767246594a65a742eb9651212');
+        $promise=$client->requestAsync('GET','https://api.bmob.cn/1/pay/'.$request['out_trade_no']);
+//        $promise=$client->requestAsync('GET','https://api.bmob.cn/1/pay/6f5ff2a767246594a65a742eb9651212');
         $promise->then(function ($response) {
 
             $code = $response->getStatusCode();
@@ -123,7 +123,7 @@ class ApiController extends Controller
                 $business->order_id=$data['out_trade_no'];
 
 
-                $data['body']='test|1|4';
+//                $data['body']='test|1|4';
 
                 
 
