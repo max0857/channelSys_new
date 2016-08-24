@@ -93,6 +93,13 @@ class ApiController extends Controller
 
     public function  bmobnotice(Request $request){
 
+
+
+        if(Business::where('order_id','=',$request['out_trade_no'])->count()>0){
+            exit('succeed');
+        }
+
+
 //        echo 'test';
 //        dd($request);
         $client= new Client(
@@ -152,7 +159,7 @@ class ApiController extends Controller
         });
 
         $promise->wait();
-
+        exit('succeed');
 
     }
 
